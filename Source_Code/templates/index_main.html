@@ -1,0 +1,176 @@
+<!--<html>
+<head>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <title>Yasaswini Fruits Prediction</title>
+</head>
+<body>
+  <div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <center><h1 style="padding:30px;font-weight: 600 !important;font-size: 3.2em">FRUITS PREDICTION</h1></center>
+    </div>
+    <div>
+    <div class="col-lg-12">
+      <center><form  class="form-inline" action = "/predict" method = "post" enctype="multipart/form-data">
+          <input type="file" name="file"/><br>
+          <input type = "submit" class="btn btn-success" value="Predict">
+      </form></center>
+    </div>
+    </div>
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasaswini DeepFruit: A Unified Deep Learning Framework for Fruit Classification and  &nbsp; &nbsp; Quality Evaluation</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+          
+        }
+
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            background-color: #2c6975;
+            color: white;
+            padding: 10px 15px;
+           
+        }
+
+        .navbar-brand, .navbar-nav li a {
+            color: white !important;
+        }
+
+        .navbar-brand:hover, .navbar-nav li a:hover {
+            color: #d4f1f4 !important;
+        }
+
+        .navbar-nav {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        .title-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2px;
+            background-color: #eafaf1;
+            color: #2c3e50;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .title-section img {
+            width: 120px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .title-text {
+            text-align: left;
+        }
+
+        .title-text h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .title-text h3 {
+            font-size: 1.2em;
+            font-weight: 400;
+            color: #34495e;
+            margin-top: 10px;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        .form-inline {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        input[type="file"] {
+            margin: 10px 0;
+        }
+
+        .btn-success {
+            background-color: #2c6975;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-success:hover {
+            background-color: #8fc1b5;
+        }
+
+
+
+        footer {
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background: #2c6975;
+            color: #f4f9f4;
+            font-size: 1.5rem;
+            margin-top: 0px;
+        }
+
+        footer a {
+            color: #8fc1b5;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="title-section">
+        <img src="/static/images/logo.jpg" alt="Logo">
+        <div class="title-text">
+            <h1>DeepFruit: A Unified Deep Learning Framework for Fruit Classification <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and Quality Evaluation</h1>
+            <h3><b>Team Members:-</b> Bollineni Yasaswini &bull; Aravapalli Vasavi &bull;Nakka Annapurna&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;Guide:-Dr.S.N.Tirumala Rao
+                &nbsp;&nbsp;&nbsp;&nbsp; Mentor:-Dodda VenkatReddy</h3>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/predict">Predict</a></li>
+                <li><a href="/model">Model Evaluation</a></li>
+                <li><a href="/flowchart">Flowchart</a></li>
+               
+
+            </ul>
+        </div>
+    </nav>
+    <img src="/static/images/fr.jpg" height="600px" width="1350px">
+</body>
+<footer>
+  &copy; All rights reserved by Narasaraopeta Engineering College
+</footer>
+</html>
